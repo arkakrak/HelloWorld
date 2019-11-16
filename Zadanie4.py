@@ -17,6 +17,7 @@ przyjdą
 do
 głowy.
 
+list comprehention na wykładzie
 """
 
 from random import randint
