@@ -10,5 +10,4 @@ def guess(val1):
             print('Not good!')
             continue
 
-
 guess('kot')
