@@ -1,0 +1,6 @@
+my_file = open("my_file.txt", "wb", 0)
+my_file.writelines("I chose to write this line\n")
+read_my_file = open("my_file.txt", "rb")
+print(read_my_file.read())
+read_my_file.close()
+my_file.close()
