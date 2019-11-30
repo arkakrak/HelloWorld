@@ -18,14 +18,14 @@ def person_print(name, last_name, *others, age):
 person_print("Jan", "Kowalski", "helicopter", age=30)
 
 
-def my_first_function(*nothing_important, width, length, heigth):
+def my_first_function(*nothing_important, width, length, height):
     print("nothing_important: {}".format(nothing_important))
     print("width: {}".format(width))
     print("length: {}".format(length))
-    print("height: {}".format(heigth))
+    print("height: {}".format(height))
 
 
-my_first_function("helicopter", width=80, length=20, heigth=180)
+my_first_function("helicopter", width=80, length=20, height=180)
 
 
 def my_second_function(width, length, *nothing_important):
