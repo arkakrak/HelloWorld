@@ -13,4 +13,8 @@ def person_print(name, last_name, *others, age):
 
 person_print("Jan", "Kowalski", "something", age=30)
 
-#def my_first_function(*args, **kwargs):
+# def my_first_function(*args, **kwargs):
+
+# def my_second_function(something, *args):
+
+# def my_third_function(something, **kwargs):
