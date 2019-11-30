@@ -11,10 +11,30 @@ def person_print(name, last_name, *others, age):
     print(formatted_data + others_str)
 
 
-person_print("Jan", "Kowalski", "something", age=30)
+# Syntax Error: positional argument follows keyword argument
+# person_print("Jan", "Kowalski", gender="helicopter", 30)
 
-# def my_first_function(*args, **kwargs):
+# This works:
+person_print("Jan", "Kowalski", "helicopter", age=30)
 
-# def my_second_function(something, *args):
 
+def my_first_function(*nothing_important, width, length, heigth):
+    print("nothing_important: {}".format(nothing_important))
+    print("width: {}".format(width))
+    print("length: {}".format(length))
+    print("height: {}".format(heigth))
+
+
+my_first_function("helicopter", width=80, length=20, heigth=180)
+
+
+def my_second_function(width, length, *nothing_important):
+    print("width: {}".format(width))
+    print("length: {}".format(length))
+    print("nothing_important: {}".format(nothing_important))
+
+
+my_second_function(80, 30, "battle helicopter")
 # def my_third_function(something, **kwargs):
+
+# def my_fourth_function(**kwargs, something):
