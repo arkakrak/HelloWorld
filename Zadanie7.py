@@ -11,4 +11,6 @@ def person_print(name, last_name, *others, age):
     print(formatted_data + others_str)
 
 
-person_print("Jan", "Kowalski", "something", 30)
+person_print("Jan", "Kowalski", "something", age=30)
+
+#def my_first_function(*args, **kwargs):
