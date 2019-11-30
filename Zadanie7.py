@@ -35,6 +35,7 @@ def my_second_function(width, length, *nothing_important):
     print("nothing_important: {}".format(nothing_important))
     print("*****************************")
 
+
 my_second_function(80, 30, "battle helicopter")
 
 
