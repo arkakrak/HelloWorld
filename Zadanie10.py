@@ -13,7 +13,8 @@ try:
     sleep(10)
     browser.find_element_by_link_text("Zjazd 7 13-15 XII 2019 r.").click()
 except NoSuchElementException:
-    print("No such element in html code")
+    print("No such element in given html code")
+    browser.close()
 finally:
     sleep(10)
     browser.close()
